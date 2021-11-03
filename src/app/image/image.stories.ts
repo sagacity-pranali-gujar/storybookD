@@ -17,15 +17,25 @@ const Template: Story<ImageComponent> = (args: ImageComponent) => ({
   props: args,
 });
 
-export const image1  = Template.bind({});
+export const NoImageCaption  = Template.bind({});
 // More on args: https://storybook.js.org/docs/angular/writing-stories/args
-image1.args = {
-
+NoImageCaption .args = {
+    figCaptionTxt : '' ,
 };
 
-// export const Secondarybutton = Template.bind({});
-// Secondarybutton.args = {
-//   label: 'Button',
-// };
+export const WithImageCaption = Template.bind({});
+WithImageCaption.args = {
+    figCaptionTxt : 'The Gateway of India is an arch-monument built in the early 20th century in the city of Mumbai, India.' ,
+};
+
+export const WithFullOpacity = Template.bind({});
+WithFullOpacity.args = {
+    imgOpacity : 1
+};
+
+export const WithHalfOpacity = Template.bind({});
+WithHalfOpacity.args = {
+    imgOpacity : 0.5
+};
 
 
