@@ -627,16 +627,6 @@
                 "defaultValue": "{\n  production: false\n}"
             },
             {
-                "name": "image1",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/app/image/image.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
                 "name": "Large",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -681,6 +671,16 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/stories/Page.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "NoImageCaption",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/image/image.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -794,6 +794,36 @@
                 "deprecationMessage": "",
                 "type": "Story<ImageComponent>",
                 "defaultValue": "(args: ImageComponent) => ({\r\n  props: args,\r\n})"
+            },
+            {
+                "name": "WithFullOpacity",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/image/image.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "WithHalfOpacity",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/image/image.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "WithImageCaption",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/image/image.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
             }
         ],
         "functions": [],
@@ -843,28 +873,6 @@
                     "deprecationMessage": "",
                     "type": "object",
                     "defaultValue": "{\n  production: false\n}"
-                }
-            ],
-            "src/app/image/image.stories.ts": [
-                {
-                    "name": "image1",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/image/image.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/image/image.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<ImageComponent>",
-                    "defaultValue": "(args: ImageComponent) => ({\r\n  props: args,\r\n})"
                 }
             ],
             "src/stories/Button.stories.ts": [
@@ -983,6 +991,58 @@
                     "defaultValue": "(args: Page) => ({\n  props: args,\n})"
                 }
             ],
+            "src/app/image/image.stories.ts": [
+                {
+                    "name": "NoImageCaption",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/image/image.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/image/image.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<ImageComponent>",
+                    "defaultValue": "(args: ImageComponent) => ({\r\n  props: args,\r\n})"
+                },
+                {
+                    "name": "WithFullOpacity",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/image/image.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "WithHalfOpacity",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/image/image.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "WithImageCaption",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/image/image.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                }
+            ],
             "src/app/buttona1/buttona1.stories.ts": [
                 {
                     "name": "Primarybutton",
@@ -1035,7 +1095,7 @@
         ]
     },
     "coverage": {
-        "count": 3,
+        "count": 2,
         "status": "low",
         "files": [
             {
@@ -1100,7 +1160,7 @@
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
-                "name": "image1",
+                "name": "NoImageCaption",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
@@ -1111,6 +1171,36 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/image/image.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "WithFullOpacity",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/image/image.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "WithHalfOpacity",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/image/image.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "WithImageCaption",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
